@@ -5,11 +5,55 @@ function App() {
 
   state = {
     states: [
-      '', 
-      ''
-    ]
-  }
+      'North Dakota', 
+      'Montana', 
+      'Idaho', 
+      'Oregon', 
+      'Wyoming', 
+      'Utah', 
+      'Arizona', 
+      'Nebraska', 
+      'South Dakota', 
+      'Kansas', 
+      'Oklahoma',
+      'Missouri', 
+      'Arkansas', 
+      'Louisiana', 
+      'Mississippi', 
+      'Tennessee', 
+      'Kentucky', 
+      'Indiana', 
+      'Michigan', 
+      'Ohio', 
+      'Alaska', 
+      'Vermont', 
+      'New Hampshire', 
+      'Delaware', 
+      'Virginia', 
+       'West Virginia', 
+       'North Carolina', 
+       'South Carolina', 
+       'Georgia', 
+       'Alabama', 
+       'Florida', 
+       'Guam', 
+       'American Samoa', 
+       'Puerto Rico',
+       'Virgon Islands', 
+       'Northern Marisana Islands' 
 
+
+
+    ], 
+    searchTerm: '' //an empty string controlled by our inpur tag
+  }, 
+
+  editSearchTerm = (e) => {
+    this.setState({
+      // allows our input field to control the searchTerm value in our state.
+      searchTerm: e.target.value
+    })
+  }
   return (
     <div className="App">
       <header className="App-header">
