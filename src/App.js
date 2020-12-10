@@ -51,7 +51,16 @@ class App extends React.Component {
       'Hawaii', 
       'Texas', 
       'New Mexico',
-      'Colorado'
+      'Colorado', 
+      'District of Columbia', 
+      'Maryland',
+      'Pennsylvania', 
+      'New Jersey', 
+      'Connecticut', 
+      'New York', 
+      'Massachusetts', 
+      'Maine', 
+      'Rhode Island'
     ],
     searchTerm: '' //an empty string controlled by our inpur tag
   }
