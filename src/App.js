@@ -14,9 +14,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Where is the 'gay panic defense' legal?</p>
+        <p>The 'gay panic defense' is a legal strategy in which a defendant claims they acted in a state of voilent, temporary insanitty, committing assault or murder, because of an unwanted sexual advance from a person in the LGBTQ+ community. </p>
         <a
           className="App-link"
           href="https://reactjs.org"
