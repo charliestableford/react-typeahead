@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
 
   state = {
-    states: [
+    illegals: [
       'North Dakota', 
       'Montana', 
       'Idaho', 
@@ -42,8 +42,6 @@ function App() {
        'Virgon Islands', 
        'Northern Marisana Islands' 
 
-
-
     ], 
     searchTerm: '' //an empty string controlled by our inpur tag
   }, 
@@ -53,11 +51,16 @@ function App() {
       // allows our input field to control the searchTerm value in our state.
       searchTerm: e.target.value
     })
+  }, 
+
+  dynamicSearch = () => {
+    //allows us to render what shows up onto the page dynamically.
+    return this.state.illegals.filter(illegal => illegal.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
   }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Where is the 'gay panic defense' legal?</p>
         <p>The 'gay panic defense' is a legal strategy in which a defendant claims they acted in a state of voilent, temporary insanitty, committing assault or murder, because of an unwanted sexual advance from a person in the LGBTQ+ community. </p>
         <p>Shocked by this? Type in a state that you assume this wouldn't be legal. If it matches this is a law in that state.</p>
