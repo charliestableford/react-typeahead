@@ -2,6 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  state = {
+    states: [
+      '', 
+      ''
+    ]
+  }
+
   return (
     <div className="App">
       <header className="App-header">
