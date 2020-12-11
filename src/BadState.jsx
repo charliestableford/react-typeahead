@@ -1,14 +1,15 @@
 
 import React, { Component } from 'react'
 
-class Name extends Component {
+class BadState extends Component {
     render() {
         return (
             <div>
                 {this.props.illegalState}
             </div>
+            
         )
     }
 }
 
-export default Name
+export default BadState

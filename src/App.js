@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import NamesContainer from './NamesContainer';
+import BadStateContainer from './BadStateContainer';
+import GoodStateContainer from './GoodStateContainer';
 
 class App extends React.Component {
 
@@ -86,7 +87,8 @@ class App extends React.Component {
         <p>Shocked by this? Type in a state name to check what the law is.</p>
         <input type="text" value = {this.state.searchTerm} onChange= {this.editSearchTerm} placeholder = 'Check a state' /> 
         <h3></h3>
-        <NamesContainer illegalStates = {this.dynamicSearch()} />       
+        <BadStateContainer illegalStates = {this.dynamicSearch()} />  
+        <GoodStateContainer legalStates = {this.dynamicSearch()} />       
       </header>
     </div>
   );
